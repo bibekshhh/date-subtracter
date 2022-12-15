@@ -4,7 +4,7 @@ const endDate = document.querySelector("#end");
 const currentDate = new Date();
 
 function calcDate(prevDate, newDate) {
-    const difference = ((new Date(newDate) - new Date(prevDate)) / 86400000).toFixed(1);
+    const difference = ((new Date(newDate) - new Date(prevDate)) / 86400000).toFixed(0);
     if (difference < 0) return "start date cannot be a future date"
     return difference
 }
